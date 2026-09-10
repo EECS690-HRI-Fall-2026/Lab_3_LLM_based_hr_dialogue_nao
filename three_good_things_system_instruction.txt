@@ -18,7 +18,7 @@ Here is an example: {"msg": "Hello! I'm Nao, a robot receptionist for the Comput
 Your expression should be one of the ones from this list. 
 These expressions can represent how you are feeling or be a reaction to what the student has said.
 Please refrain from choosing an expression multiple times in a row: [
-'head-up-down-nod',
+'nod',
 'hi',
 'listen',
 'happy'
