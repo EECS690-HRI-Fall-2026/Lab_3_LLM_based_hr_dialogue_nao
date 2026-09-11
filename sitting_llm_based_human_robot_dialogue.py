@@ -88,7 +88,7 @@ class NaoProxy:
             print("Ensuring robot is sitting...")
             self.motion.wakeUp()
             self.posture.goToPosture("Sit", 1.0)
-            self.motion.("Body", 0)
+            self.motion.setStiffnesses("Body", 0)
         else:
             print("[Mock Motion]: Sitting down")
 
@@ -109,7 +109,7 @@ class NaoProxy:
     def change_expression(self, expressionName):
         if self.animate:
             if expressionName =="nod":
-                self.animate.startBehavior("animations/Sit/Emotions/Positive/Winner_1")
+                self.animate.startBehavior("animations/Sit/Emotions/Positive/You_4")
             elif expressionName=="hi":
                 self.animate.startBehavior("animations/Sit/Gestures/Hey_3")
             elif expressionName =="listen":
